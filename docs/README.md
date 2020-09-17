@@ -22,7 +22,7 @@ Duke can also help you manage these tasks via these commands:
 
 ## **Usage** 
 
-Type your desired command into the text box of Duke. 
+Type your desired command into the text box of Duke. Duke will save your tasks into storage, and will load these tasks when starting up the app.
 
 ## **Commands**
 
@@ -33,7 +33,7 @@ Type your desired command into the text box of Duke.
 todo <description name>
 ```
 
-Duke will add a todo task with the description name
+Duke will add a todo task with the description name, and will also display the number of tasks in your current list.
 
 **Example:** todo homework
 
@@ -46,7 +46,7 @@ Duke will add a todo task with the description name
 deadline <description name> /by <date in YYYY-MM-DD format>
 ```
 
-Duke will add a deadline task with the description name and a date it is due by
+Duke will add a deadline task with the description name and a date it is due by, and will also display the number of tasks in your current list.
 
 **Example:** deadline watch lecture /by 2020-09-20
 
@@ -59,7 +59,7 @@ Duke will add a deadline task with the description name and a date it is due by
 event <description name> /at <date in YYYY-MM-DD format>
 ```
 
-Duke will add an event task with the description name and a date it is held at
+Duke will add an event task with the description name and a date it is held at, and will also display the number of tasks in your current list.
 
 **Example:** event concert /at 2020-09-13
 
@@ -73,7 +73,7 @@ done <task index in list>
 ```
 
 Duke will mark the selected task as done. Task index refers to the position of the task in the list.
-If task index is invalid, such as if it is 0 or smaller, Duke will return "No such task found!"
+If task index is invalid, such as if it is 0 or smaller, Duke will return "No such task found!".
 
 **Example:** done 3
 
@@ -87,7 +87,7 @@ delete <task index in list>
 ```
 
 Duke will delete the selected task, and will return the number of tasks left in the list. Task index refers to the position of the task in the list.
-If task index is invalid, such as if it is 0 or smaller, Duke will return "This task does not exist!"
+If task index is invalid, such as if it is 0 or smaller, Duke will return "This task does not exist!".
 
 **Example:** delete 2
 
