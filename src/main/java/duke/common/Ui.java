@@ -34,12 +34,16 @@ public class Ui {
      * @param tasks list of tasks the user has inputted thus far.
      */
     public static void displayTasks(TaskList tasks) {
-        StringBuilder s = new StringBuilder();
-        s.append("Here is your current list: \n");
-        for (int i = 0; i < tasks.getSize(); i++) {
-            s.append(i + 1).append(". ").append(tasks.getTask(i)).append("\n");
+        if (!tasks.isEmpty()) {
+            StringBuilder s = new StringBuilder();
+            s.append("Here is your current list: \n");
+            for (int i = 0; i < tasks.getSize(); i++) {
+                s.append(i + 1).append(". ").append(tasks.getTask(i)).append("\n");
+            }
+            displayString(s.toString());
+        } else {
+            displayString("No list found!");
         }
-        displayString(s.toString());
     }
 
     /**
@@ -57,27 +61,23 @@ public class Ui {
      * @param tasks list of tasks that matches the users keyword.
      */
     public static void displayMatchingTasks(TaskList tasks) {
-        StringBuilder s = new StringBuilder();
-        s.append("Here is the matching list: \n");
-        for (int i = 0; i < tasks.getSize(); i++) {
-            s.append(i + 1).append(". ").append(tasks.getTask(i)).append("\n");
+        if (!tasks.isEmpty()) {
+            StringBuilder s = new StringBuilder();
+            s.append("Here is the matching list: \n");
+            for (int i = 0; i < tasks.getSize(); i++) {
+                s.append(i + 1).append(". ").append(tasks.getTask(i)).append("\n");
+            }
+            displayString(s.toString());
+        } else {
+            displayString("No list found!");
         }
-        displayString(s.toString());
-
     }
 
     /**
      * Generates and prints the welcome message upon the start of the application.
      */
     public static void displayWelcome() {
-        String logo = " ____        _        \n"
-                + "|  _ \\ _   _| | _____ \n"
-                + "| | | | | | | |/ / _ \\\n"
-                + "| |_| | |_| |   <  __/\n"
-                + "|____/ \\__,_|_|\\_\\___|\n";
-
-        displayString("Hello from\n" + logo);
-        displayString("Hello! I'm Duke\n"
+        displayString("Hello! I'm Miss Piggy\n"
                 + "     What can I do for you?");
     }
 

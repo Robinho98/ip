@@ -38,7 +38,7 @@ public class ToDo extends Task {
      * @return whether the task contains that keyword.
      */
     public boolean hasKeyword(String keyword) {
-        return description.contains(keyword);
+        return description.contains(keyword) || tagDescription.contains(keyword);
     }
 
     /**

@@ -52,7 +52,8 @@ public class Event extends Task {
      * @return whether the task contains that keyword.
      */
     public boolean hasKeyword(String keyword) {
-        return description.contains(keyword) || at.format(DateTimeFormatter.ofPattern("d MMM yyyy")).contains(keyword);
+        return description.contains(keyword) || at.format(DateTimeFormatter.ofPattern("d MMM yyyy")).contains(keyword)
+                || tagDescription.contains(keyword);
     }
 
     /**

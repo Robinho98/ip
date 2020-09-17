@@ -6,7 +6,12 @@ import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.paint.Color;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 /**
@@ -16,6 +21,7 @@ public class Main extends Application {
     private static MainWindow window;
     private Duke duke = new Duke();
 
+    @SuppressWarnings("checkstyle:CommentsIndentation")
     @Override
     public void start(Stage stage) {
         try {
