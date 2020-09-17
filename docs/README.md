@@ -1,7 +1,7 @@
 # **User Guide**
 Duke is a chat bot that can help you manage your daily tasks.
 
-![Image of Screenshot](docs/Screenshot.png)
+![Image of Screenshot](Screenshot.png)
 
 ## **Features** 
 
