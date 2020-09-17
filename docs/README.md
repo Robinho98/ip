@@ -1,20 +1,60 @@
 # User Guide
+Duke is a chat bot that can help you manage your daily tasks.
 
 ## Features 
 
-### Feature 1 
-Description of feature.
+Duke is capable fo creating tasks, such as:
 
-## Usage
+* ToDo
+* Deadline
+* Event
 
-### `Keyword` - Describe action
+Duke can also help you manage these tasks via these commands:
 
-Describe action and its outcome.
+* Done
+* Delete
+* List
+* Find
+* Tag
+* Bye
 
-Example of usage: 
+## Usage 
 
-`keyword (optional arguments)`
+Type your desired command into the text box of Duke. 
 
-Expected outcome:
+## Commands
 
-`outcome`
+### 1. Adding a ToDo task
+
+Usage: 
+```
+todo <description name>
+```
+
+Duke will add a todo task with the description name
+
+Example: todo homework
+
+### 2. Adding a Deadline task
+
+Usage: 
+```
+deadline <description name> /by <date in YYYY-MM-DD format>
+```
+
+Duke will add a deadline task with the description name and a date it is due by
+
+Example: deadline watch lecture /by 2020-09-20
+
+### 3. Adding an Event task
+
+Usage: 
+```
+event <description name> /at <date in YYYY-MM-DD format>
+```
+
+Duke will add an event task with the description name and a date it is held at
+
+Example: event concert /at 2020-09-13
+
+
