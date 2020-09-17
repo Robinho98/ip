@@ -118,7 +118,7 @@ Duke will list all tasks that contains the keyword. Keyword can be found from th
 
 ![Image of find](find.png)
 
-### 7. Tag Task
+### 8. Tag Task
 
 **Usage:** 
 ```
@@ -131,7 +131,7 @@ Duke will find the task at the task index, and tag it with the tag description. 
 
 ![Image of tag](tag.png)
 
-### 7. Bye
+### 9. Bye
 
 **Usage:** 
 ```
