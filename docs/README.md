@@ -37,6 +37,8 @@ Duke will add a todo task with the description name
 
 **Example:** todo homework
 
+![Image of Todo](todo.png)
+
 ### 2. Adding a Deadline task
 
 **Usage:** 
@@ -48,6 +50,8 @@ Duke will add a deadline task with the description name and a date it is due by
 
 **Example:** deadline watch lecture /by 2020-09-20
 
+![Image of Deadline](deadline.png)
+
 ### 3. Adding an Event task
 
 **Usage:** 
@@ -58,6 +62,8 @@ event <description name> /at <date in YYYY-MM-DD format>
 Duke will add an event task with the description name and a date it is held at
 
 **Example:** event concert /at 2020-09-13
+
+![Image of Event](event.png)
 
 ### 4. Mark task as done
 
@@ -71,6 +77,8 @@ If task index is invalid, such as if it is 0 or smaller, Duke will return "No su
 
 **Example:** done 3
 
+![Image of Done](done.png)
+
 ### 5. Delete Task
 
 **Usage:** 
@@ -78,8 +86,58 @@ If task index is invalid, such as if it is 0 or smaller, Duke will return "No su
 delete <task index in list>
 ```
 
-Duke will delete the selected task, and . Task index refers to the position of the task in the list.
+Duke will delete the selected task, and will return the number of tasks left in the list. Task index refers to the position of the task in the list.
 If task index is invalid, such as if it is 0 or smaller, Duke will return "This task does not exist!"
 
 **Example:** delete 2
+
+![Image of Delete](delete.png)
+
+### 6. List Current Tasks
+
+**Usage:** 
+```
+list
+```
+
+Duke will list all current tasks that the user has inputted.
+
+![Image of List](list.png)
+
+### 7. Find Tasks
+
+**Usage:** 
+```
+find <keyword>
+```
+
+Duke will list all tasks that contains the keyword. Keyword can be found from the date, description or tags if the task has those properties. If no such tasks can be found, Duke will return
+"No matching tasks!"
+
+**Example:** find homework
+
+![Image of homework](homework.png)
+
+### 7. Tag Task
+
+**Usage:** 
+```
+tag <task index> <tag description>
+```
+
+Duke will find the task at the task index, and tag it with the tag description. Then, Duke will display that task together with its tag, and the tag is denoted with a #.
+
+**Example:** tag 1 hard
+
+![Image of tag](tag.png)
+
+### 7. Bye
+
+**Usage:** 
+```
+bye
+```
+
+Duke will save all the tasks into storage, and close the program.
+
 

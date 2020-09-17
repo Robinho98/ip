@@ -51,7 +51,7 @@ public class Ui {
      * @param tasks list of tasks the user has inputted thus far.
      */
     public static void displayRemainingTasks(TaskList tasks) {
-        display("\nNow you have "
+        display("Now you have "
                 + tasks.getSize()
                 + " tasks in your list.");
     }
