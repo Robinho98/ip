@@ -116,7 +116,7 @@ Duke will list all tasks that contains the keyword. Keyword can be found from th
 
 **Example:** find homework
 
-![Image of homework](homework.png)
+![Image of find](find.png)
 
 ### 7. Tag Task
 
