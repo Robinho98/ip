@@ -1,5 +1,5 @@
 # **User Guide**
-Duke is a chat bot that can help you manage your daily tasks.
+Duke is a chat bot that can help you manage your daily tasks. Duke can also save your list of tasks, and will display them the next time you start it up.
 
 ![Image of welcome](welcome.png)
 
